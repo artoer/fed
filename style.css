@@ -1,0 +1,186 @@
+* {
+
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+
+}
+
+h1 {
+
+    display: flex;
+    box-sizing: border-box;
+    padding: .5rem 0;
+
+    background-color: white;
+    color: black;
+
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    width: 100%;
+    height: 10vh;
+
+    font-size: 5vh;
+
+}
+
+ul {
+
+    display: flex;
+    flex-flow: row wrap;
+    list-style: none;
+
+}
+
+ul::-webkit-scrollbar {
+    display: none;
+}
+
+li {
+
+    box-sizing: border-box;
+    width: calc(100%/3);
+    height: 15vh;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    text-align: center;
+
+    color: white;
+    text-shadow: 1px 1px 3px black;
+    font-size: 5vw;
+    font-weight: lighter;
+
+    background-size: cover;
+    background-position: center;
+
+
+}
+
+li a {
+    height: 100%;
+    width: 100%;
+
+    color: inherit;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+}
+
+
+li:nth-child(1) {
+
+    background-color: powderblue;
+    background-image: url(nl.jpg);
+
+}
+
+li:nth-child(2) {
+
+    background-color: skyblue;
+    background-image: url(plane.jpg);
+}
+
+li:nth-child(3) {
+
+    background-color: steelblue;
+    background-image: url(usa.jpg);
+}
+
+li:nth-child(4) {
+
+    background-color: lightblue;
+    background-image: url(fl.jpg);
+}
+
+li:nth-child(5) {
+
+    background-color: lightskyblue;
+    background-image: url(rodekruis.jpg);
+}
+
+li:nth-child(6) {
+
+    background-color: black;
+    /*    background-image: url(vraag.jpg);*/
+}
+
+main {
+
+    width: 100%;
+    display: grid;
+ grid-template-columns: repeat(auto-fill, minmax(auto,1fr));
+  grid-gap: 1rem;
+}
+
+h2 {
+    text-align: center;
+}
+
+section {
+/*
+
+    flex: 1;
+    padding: 0 2rem;
+    background-color:
+*/
+
+}
+
+section:last-of-type {
+
+    /*    flex: 1;*/
+
+
+}
+
+section img {
+
+    display: flex;
+    max-width: auto;
+    max-height: 33vh;
+    padding: 1rem 0;
+    margin: 0 auto;
+    display: block;
+
+
+}
+
+/*Breakpoints*/
+@media all and (max-width: 600px) {
+
+    ul {
+
+        flex-flow: row nowrap;
+        overflow: auto;
+
+    }
+
+    li {
+        min-width: 45%;
+        height: 15vh;
+
+    }
+
+    main {
+
+        padding: 0 2%;
+        flex-flow: column wrap;
+
+    }
+
+}
+
+li:hover {
+
+    transition: 250ms;
+    transform: scale(1.01);
+    -webkit-filter: brightness(110%);
+
+}
