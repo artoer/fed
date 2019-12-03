@@ -70,12 +70,11 @@ li {
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
+    font-weight: 300;
 
     color: white;
     text-shadow: 1px 1px 3px black;
-    font-size: calc(2vw + 1em);
-    ;
-    font-weight: lighter;
+    font-size: calc(1vw + 2em);
 
     transition: 200ms;
     background-size: cover;
@@ -214,6 +213,7 @@ section img {
     li {
         min-width: calc(100% / 3);
         height: 15vh;
+        font-weight: lighter;
     }
 
 
