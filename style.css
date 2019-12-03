@@ -206,6 +206,11 @@ section img {
 
     }
 
+
+    ul::-webkit-scrollbar {
+        display: auto;
+    }
+
     li {
         min-width: calc(100% / 3);
         height: 15vh;
@@ -229,6 +234,30 @@ section img {
 
 
 }
+
+/*dark mode experiment*/
+/*
+@media all and (prefers-color-scheme: dark) {
+    html {
+        background-color: black;
+    }
+
+    h1 {
+        color: white;
+        background-color: black;
+    }
+
+    ul li {
+        -webkit-filter: grayscale(50%);
+    }
+
+    section {
+        background-color: darkslateblue !important;
+        color: white;
+    }
+
+}
+*/
 
 li:hover {
 
