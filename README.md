@@ -13,6 +13,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/box-shadow
 https://css-tricks.com/snippets/css/css-box-shadow/
 
 
+
 feedback klasgenoten
 
 +goed uitgewerkt mobile
