@@ -22,13 +22,22 @@ h1 {
     width: 100%;
     height: 10vh;
 
-    font-size: calc(4vw + 1em);
+    font-size: calc(2vw + 2em);
 
 }
 
 h1 a {
-    color: black;
-    text-decoration: none
+    height: 100%;
+    width: 100%;
+
+    color: inherit;
+    text-decoration: none;
+
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+
 }
 
 ul {
@@ -37,6 +46,8 @@ ul {
     flex-flow: row nowrap;
     overflow: auto;
     list-style: none;
+    border-bottom: 1px solid black;
+    border-top: 1px solid black;
 
 }
 
@@ -62,7 +73,8 @@ li {
 
     color: white;
     text-shadow: 1px 1px 3px black;
-    font-size: 5vw;
+    font-size: calc(2vw + 1em);
+    ;
     font-weight: lighter;
 
     transition: 200ms;
@@ -130,8 +142,8 @@ main {
     width: 95%;
     margin: 5vh auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(100% - 5%), 1fr));
-    grid-gap: 5%;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100% - 2%), 1fr));
+    grid-gap: 2%;
 
 }
 
@@ -141,6 +153,12 @@ main p {
 
     line-height: 125%;
     font-size: 1.2em;
+
+}
+
+main p:not(:first-of-type) {
+
+    padding-top: 1.5em;
 
 }
 
@@ -154,6 +172,7 @@ section {
 
     background-color: pink;
     padding: 5%;
+    filter: drop-shadow(0px 0px .1rem rgba(0, 0, 0, .5));
 
 }
 
@@ -194,6 +213,8 @@ section img {
 
 
     main {
+
+        width: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(calc(50% - 5%), 1fr));
         grid-gap: 5%;
@@ -207,11 +228,11 @@ section img {
     }
 
 
-
 }
 
 li:hover {
 
     transition: 250ms;
     -webkit-filter: brightness(110%);
+    -webkit-box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.4);
 }
