@@ -214,6 +214,7 @@ section img {
         min-width: calc(100% / 3);
         height: 15vh;
         font-weight: lighter;
+        font-size: calc(2vw + 1em);
     }
 
 
