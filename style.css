@@ -2,86 +2,132 @@
 
     margin: 0;
     padding: 0;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Raleway', 'Roboto', 'Arial', sans-serif;
+    scroll-behavior: smooth;
 
+}
+
+
+.flex-homepage {
+
+    position: relative;
+    pointer-events: none;
+    display: flex;
+    height: 100vh;
+    width: 100%;
+
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: space-around;
+
+    background-color: dodgerblue;
+    background-image: url(bg.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+.flex-homepage figure {
+
+    display: inline-block;
+    pointer-events: visible;
+    position: absolute;
+    text-align: center;
+    bottom: 2.5vh;
+    width: 100%;
+    margin: 0 auto;
+
+    font-size: 5vh;
+    font-weight: 900;
+    color: white;
+    text-shadow: 0 0 .1vh black;
+
+    transition: 250ms;
+
+}
+
+.flex-homepage figure:hover {
+
+    bottom: 3.5vh;
+    text-shadow: 0 0 .5vh black;
+
+}
+
+button {
+
+    position: absolute;
+    bottom: 25vh;
+    box-shadow: 0 0 1px #000;
+    pointer-events: auto;
+    margin: auto;
+    font-size: 1.2rem;
+    padding: 1.25rem 3rem;
+    border: none;
+    color: white;
+    background-color: tomato;
+    border-radius: 5vh;
+
+}
+
+button:hover {
+    transition: 250ms;
+    background-color: #fff;
+    color: #000;
 }
 
 h1 {
 
-    display: flex;
-    box-sizing: border-box;
-    padding: 1rem 0;
-
-    background-color: white;
-    color: black;
-
-    flex-direction: column;
-    justify-content: space-around;
+    margin: auto;
     text-align: center;
-
-    width: 100%;
-    height: auto;
-
-    font-size: calc(4vw + 1em);
+    font-weight: 400;
+    color: #fff;
+    font-size: calc(7vw + 1em);
 
 }
 
-h1 a {
-    height: 100%;
+
+nav {
+    position: fixed;
+    top: 0;
+    z-index: 1;
     width: 100%;
-
-    color: inherit;
-    text-decoration: none;
-
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    text-align: center;
-
+    border-bottom: 1px solid grey;
 }
 
 ul {
 
     display: flex;
+    height: 7.5vh;
+    background-color: white;
     flex-flow: row nowrap;
-    overflow: auto;
+    overflow: scroll;
     list-style: none;
-    border-bottom: 1px solid black;
-    border-top: 1px solid black;
+    align-items: flex-end;
+    scrollbar-width: none;
 
 }
-
-
-
-ul::-webkit-scrollbar {
-    display: none;
-}
-
 
 
 li {
 
     box-sizing: border-box;
-    min-width: 45%;
-    height: 15vh;
-
+    min-width: 40%;
+    height: 5vh;
+    padding: 0 .5rem calc(1vh - 3px) .5rem;
+    border-radius: 10px 10px 0 0;
+    border-bottom: 3px solid transparent;
 
     display: flex;
     flex-direction: column;
     justify-content: space-around;
     text-align: center;
-    font-weight: 300;
+    font-weight: 600;
 
-    color: white;
-    text-shadow: 1px 1px 3px black;
+    color: #000;
     font-size: calc(1vw + 1em);
 
-    transition: 200ms;
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-
-
+    transition: 250ms;
 }
 
 li a {
@@ -98,60 +144,22 @@ li a {
 }
 
 
-li:nth-child(1) {
-
-    background-color: powderblue;
-    background-image: url(nl.jpg);
-
-}
-
-li:nth-child(2) {
-
-    background-color: skyblue;
-    background-image: url(plane.jpg);
-}
-
-li:nth-child(3) {
-
-    background-color: steelblue;
-    background-image: url(usa.jpg);
-}
-
-li:nth-child(4) {
-
-    background-color: lightblue;
-    background-image: url(fl.jpg);
-}
-
-li:nth-child(5) {
-
-    background-color: lightskyblue;
-    background-image: url(rodekruis.jpg);
-}
-
-li:nth-child(6) {
-
-    background-color: black;
-    background-image: url(vraag.jpg);
-
-}
 
 main {
 
-    width: 95%;
-    margin: 5vh auto;
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(100% - 2%), 1fr));
-    grid-gap: 2%;
+    grid-template-columns: repeat(auto-fill, minmax(calc(100%), 1fr));
+
 
 }
-
-
 
 main p {
 
     line-height: 125%;
-    font-size: 1.2em;
+    font-size: 1.1em;
 
 }
 
@@ -162,7 +170,7 @@ main p:not(:first-of-type) {
 }
 
 h2 {
-    font-size: 200%;
+    font-size: 3vh;
     text-align: center;
     margin-bottom: .5rem;
 }
@@ -170,8 +178,8 @@ h2 {
 section {
 
     background-color: pink;
-    padding: 5%;
-    filter: drop-shadow(0px 0px .1rem rgba(0, 0, 0, .5));
+    padding: 3vh;
+    filter: drop-shadow(none);
 
 }
 
@@ -179,60 +187,75 @@ section:last-of-type {
 
     background-color: aquamarine;
 
-
 }
 
 section img {
 
     display: flex;
-    max-width: 80%;
+    max-width: 90%;
     max-height: auto;
 
     margin: 5% auto;
-
-
 
 }
 
 /*Mobile first!*/
 /*Breakpoints*/
-@media all and (min-width: 600px) {
+@media all and (min-width: 750px) {
 
     ul {
 
         display: flex;
-        flex-flow: row wrap;
+        flex-flow: row nowrap;
+        justify-content: flex-end;
 
-    }
-
-
-    ul::-webkit-scrollbar {
-        display: auto;
     }
 
     li {
-        min-width: calc(100% / 3);
-        height: 15vh;
+
+        min-width: 3vw;
+        margin-left: 1vw;
+        border-bottom: 3px solid transparent;
+        height: 5vh;
         font-weight: lighter;
-        font-size: calc(2vw + 1em);
+        font-size: calc(1vw + 1em);
+
     }
 
+    li:last-of-type {
+        margin-right: 15vw;
+    }
+
+    li:first-of-type {
+        margin-right: auto;
+        margin-left: 15vw;
+    }
 
     main {
 
+        margin: 5vh auto;
         width: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(calc(50% - 5%), 1fr));
         grid-gap: 5%;
     }
 
+    section {
+        filter: drop-shadow(0px 0px .1rem rgba(0, 0, 0, .5));
+    }
+
     main p {
 
         line-height: normal;
-        font-size: 1.1em;
+        font-size: 1.2em;
 
     }
 
+    main p:not(:first-of-type) {
+
+        padding-top: 1rem;
+
+    }
 
 }
 
@@ -261,8 +284,5 @@ section img {
 */
 
 li:hover {
-
-    transition: 250ms;
-    -webkit-filter: brightness(110%);
-    -webkit-box-shadow: inset 0 0 2rem rgba(0, 0, 0, 0.4);
+    border-bottom: 3px solid black;
 }
