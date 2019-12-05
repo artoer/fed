@@ -18,6 +18,8 @@ https://stackoverflow.com/questions/3296644/hiding-the-scroll-bar-on-an-html-pag
 
 https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width
 
+https://linuxwebdevelopment.com/how-to-insert-emojis-in-html/
+
 
 feedback klasgenoten
 
