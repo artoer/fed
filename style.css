@@ -7,6 +7,9 @@
 
 }
 
+body {
+    background-color: aquamarine;
+}
 
 .flex-homepage {
 
@@ -15,6 +18,8 @@
     display: flex;
     height: 100vh;
     width: 100%;
+
+    margin-top: -7.5vh;
 
     flex-flow: column nowrap;
     align-items: center;
@@ -56,13 +61,14 @@
 
 button {
 
+    box-sizing: border-box;
     position: absolute;
-    bottom: 25vh;
+    bottom: 20vh;
     box-shadow: 0 0 1px #000;
     pointer-events: auto;
     margin: auto;
-    font-size: 1.2rem;
-    padding: 1.25rem 3rem;
+    font-size: 1.5rem;
+    padding: 2.5vh 7.5vw;
     border: none;
     color: white;
     background-color: tomato;
@@ -88,14 +94,17 @@ h1 {
 
 
 nav {
+    background-color: transparent;
+    height: 7.5vh;
+    width: 100%;
+}
+
+ul {
     position: fixed;
     top: 0;
     z-index: 1;
     width: 100%;
     border-bottom: 1px solid grey;
-}
-
-ul {
 
     display: flex;
     height: 7.5vh;
@@ -113,14 +122,12 @@ li {
 
     box-sizing: border-box;
     min-width: 40%;
-    height: 5vh;
-    padding: 0 .5rem calc(1vh - 3px) .5rem;
+    height: 100%;
     border-radius: 10px 10px 0 0;
     border-bottom: 3px solid transparent;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-around;
     text-align: center;
     font-weight: 600;
 
@@ -143,15 +150,24 @@ li a {
     text-align: center;
 }
 
+.nav-active {
+    border-bottom: 3px solid tomato;
+    color: tomato;
+    transition: 250ms
+}
 
+.nav-active:hover {
+    border-bottom: 3px solid black;
+    color: black;
+}
 
 main {
 
-    position: relative;
+    position: static;
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(100%), 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(calc(50%), 1fr));
 
 
 }
@@ -176,17 +192,20 @@ h2 {
 }
 
 section {
-
-    background-color: pink;
+    color: white;
     padding: 3vh;
     filter: drop-shadow(none);
 
 }
 
-section:last-of-type {
+section:nth-child(even) {
 
-    background-color: aquamarine;
+    background-color: #f54;
 
+}
+
+section:nth-child(odd) {
+    background-color: #f74;
 }
 
 section img {
@@ -195,7 +214,13 @@ section img {
     max-width: 90%;
     max-height: auto;
 
-    margin: 5% auto;
+    margin: 2.5% auto;
+
+}
+
+.span-test {
+    grid-column: 1 / span 2;
+    grid-row: 1;
 
 }
 
@@ -213,10 +238,10 @@ section img {
 
     li {
 
-        min-width: 3vw;
-        margin-left: 1vw;
+        min-width: 4vw;
+        margin: 0 .75vw;
         border-bottom: 3px solid transparent;
-        height: 5vh;
+        height: 100%;
         font-weight: lighter;
         font-size: calc(1vw + 1em);
 
@@ -233,11 +258,12 @@ section img {
 
     main {
 
+        top 0;
         margin: 5vh auto;
         width: 90%;
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(calc(50% - 5%), 1fr));
-        grid-gap: 5%;
+        grid-gap: 5vw;
     }
 
     section {
@@ -257,22 +283,33 @@ section img {
 
     }
 
+    .flex-homepage figure {
+        display: none
+    }
+
 }
 
-/*dark mode experiment*/
+/*dark mode*/
 /*
 @media all and (prefers-color-scheme: dark) {
-    html {
+    body {
         background-color: black;
     }
 
-    h1 {
-        color: white;
-        background-color: black;
+    button {
+        background-color: darkslateblue;
+    }
+
+    ul {
+        background-color: darkslateblue;
     }
 
     ul li {
-        -webkit-filter: grayscale(50%);
+        color: white;
+    }
+
+    ul li:hover {
+        border-bottom: 3px solid white;
     }
 
     section {
@@ -282,6 +319,7 @@ section img {
 
 }
 */
+
 
 li:hover {
     border-bottom: 3px solid black;
