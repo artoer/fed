@@ -167,8 +167,7 @@ main {
     width: 100%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(calc(50%), 1fr));
-
+    grid-template-columns: repeat(auto-fill, minmax(calc(100%), 1fr));
 
 }
 
@@ -218,12 +217,6 @@ section img {
 
 }
 
-.span-test {
-    grid-column: 1 / span 2;
-    grid-row: 1;
-
-}
-
 /*Mobile first!*/
 /*Breakpoints*/
 @media all and (min-width: 750px) {
@@ -262,8 +255,8 @@ section img {
         margin: 5vh auto;
         width: 90%;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 5%), 1fr));
-        grid-gap: 5vw;
+        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 2.5vw), 1fr));
+        grid-gap: 2.5vw;
     }
 
     section {
@@ -285,6 +278,10 @@ section img {
 
     .flex-homepage figure {
         display: none
+    }
+
+    .span-test {
+        grid-column: 1 / span 2;
     }
 
 }
