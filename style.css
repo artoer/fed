@@ -2,15 +2,16 @@
 
     margin: 0;
     padding: 0;
-    font-family: 'Raleway', 'Roboto', 'Arial', sans-serif;
+    font-family: 'Roboto', 'Raleway', 'Arial', sans-serif;
     scroll-behavior: smooth;
 
 }
 
 body {
-    background-color: aquamarine;
+    background-color: ghostwhite;
 }
 
+/*Paginagrote foto op homepage*/
 .flex-homepage {
 
     position: relative;
@@ -26,13 +27,14 @@ body {
     justify-content: space-around;
 
     background-color: dodgerblue;
-    background-image: url(bg.jpg);
+    background-image: url(images/1.jpg);
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
 
 }
 
+/*Het v'tje dat hint naar meer content op de pagina*/
 .flex-homepage figure {
 
     display: inline-block;
@@ -43,15 +45,16 @@ body {
     width: 100%;
     margin: 0 auto;
 
-    font-size: 5vh;
+    font-size: 5vw;
     font-weight: 900;
     color: white;
     text-shadow: 0 0 .1vh black;
 
-    transition: 250ms;
+    transition: 300ms ease-in;
 
 }
 
+/*Animatie voor het v'tje*/
 .flex-homepage figure:hover {
 
     bottom: 3.5vh;
@@ -59,6 +62,7 @@ body {
 
 }
 
+/*Grote oranje, call to action knop op de homepage*/
 button {
 
     box-sizing: border-box;
@@ -71,35 +75,40 @@ button {
     padding: 2.5vh 7.5vw;
     border: none;
     color: white;
-    background-color: tomato;
+    background-color: #f54;
     border-radius: 5vh;
+    transition: 250ms ease;
 
 }
 
+/*Animatie voor de knop*/
 button:hover {
-    transition: 250ms;
+    transition: 250ms ease;
     background-color: #fff;
     color: #000;
 }
 
+/*Titel op de homepagina*/
 h1 {
 
     margin: auto;
     text-align: center;
-    font-weight: 400;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 300;
     color: #fff;
     font-size: calc(7vw + 1em);
 
 }
 
-
+/*Navigatie*/
 nav {
     background-color: transparent;
     height: 7.5vh;
     width: 100%;
 }
 
-ul {
+
+nav ul {
     position: fixed;
     top: 0;
     z-index: 1;
@@ -113,12 +122,19 @@ ul {
     overflow: scroll;
     list-style: none;
     align-items: flex-end;
+
     scrollbar-width: none;
 
 }
 
+/*Scrollbar verstop trucje*/
+nav ul::-webkit-scrollbar {
 
-li {
+    display: none;
+}
+
+
+nav ul li {
 
     box-sizing: border-box;
     min-width: 40%;
@@ -129,15 +145,16 @@ li {
     display: flex;
     flex-direction: column;
     text-align: center;
-    font-weight: 600;
+    font-weight: 400;
 
     color: #000;
     font-size: calc(1vw + 1em);
 
-    transition: 250ms;
+    transition: 250ms ease;
 }
 
-li a {
+/*Zorgt dat de navigatie links de hele ruimte in beslag neemt en dat de stijling hetzelfde blijft*/
+nav ul li a {
     height: 100%;
     width: 100%;
 
@@ -150,10 +167,11 @@ li a {
     text-align: center;
 }
 
+/*Andere kleur in de nav voor huidige (actieve) pagina*/
 .nav-active {
-    border-bottom: 3px solid tomato;
-    color: tomato;
-    transition: 250ms
+    border-bottom: 3px solid #f54;
+    color: #f54;
+    transition: 250ms ease;
 }
 
 .nav-active:hover {
@@ -161,6 +179,7 @@ li a {
     color: black;
 }
 
+/*Main styling - op desktop neemt het de gehele schermbreedte in*/
 main {
 
     position: static;
@@ -171,57 +190,148 @@ main {
 
 }
 
-main p {
+/*Body text styling*/
+main p,
+li {
 
     line-height: 125%;
-    font-size: 1.1em;
-
+    font-size: 20px;
 }
 
+/*Ruimte tussen p's behalve de eerste*/
 main p:not(:first-of-type) {
 
     padding-top: 1.5em;
 
 }
 
+/*Stijling voor level 2 en 3 headers*/
 h2 {
-    font-size: 3vh;
-    text-align: center;
-    margin-bottom: .5rem;
+    font-size: calc(1.05em + 1.5vh);
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-bottom: 1em;
 }
 
+h3 {
+    margin: 1em 0;
+    font-size: calc(.6em + 1.5vh);
+    font-family: 'Raleway', sans-serif;
+    text-align: left;
+    margin-bottom: 1em;
+}
+
+/*Stijling voor de sections*/
 section {
     color: white;
     padding: 3vh;
     filter: drop-shadow(none);
+    background: linear-gradient(35deg, #f54, darkblue);
 
 }
 
-section:nth-child(even) {
-
-    background-color: #f54;
-
-}
-
-section:nth-child(odd) {
-    background-color: #f74;
-}
-
+/*Stijling voor eventuele afbeeldingen in de sections*/
 section img {
 
     display: flex;
-    max-width: 90%;
-    max-height: auto;
-
-    margin: 2.5% auto;
+    max-width: 100%;
+    max-height: 50vh;
+    margin: 1em auto;
 
 }
 
+/*Stijling voor specifiek grid element met achtergrondfoto en extra grote header*/
+.span-ontdek {
+    background-image: url(images/4.jpg);
+    min-height: 33vh;
+    text-shadow: 2px 2px 0 black;
+    font-size: 7vw;
+
+    background-position: 45%;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+
+nav ul li:hover {
+    border-bottom: 3px solid black;
+}
+
+/*Formulier*/
+fieldset {
+
+    box-sizing: border-box;
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 2em;
+    padding: 1em;
+}
+
+
+input[type=text] {
+
+    padding: calc(.2em - 2px);
+    border: 2px solid transparent;
+
+}
+
+input[type=submit] {
+
+    margin-top: 1.5em;
+    margin-bottom: 0;
+    padding: .5em;
+    border: none;
+    background-color: black;
+    color: white;
+    transition: 200ms;
+
+}
+
+input[type=submit]:hover {
+
+    color: Black;
+    background-color: white;
+    transition: 200ms;
+
+}
+
+input[type=text]:focus {
+    border: 2px solid #f54;
+}
+
+input,
+select,
+textarea {
+    font-family: inherit;
+    font-size: 100%;
+}
+
+input {
+
+    margin-bottom: 1em;
+    border-radius: 5px;
+}
+
+label::after {
+    content: ':';
+}
+
+figcaption {
+    display: none;
+}
+
+
+section ul li {
+    list-style-position: inside;
+    margin: .2em 0;
+}
+
+
 /*Mobile first!*/
 /*Breakpoints*/
-@media all and (min-width: 750px) {
+@media all and (min-width: 920px) {
 
-    ul {
+    nav ul {
 
         display: flex;
         flex-flow: row nowrap;
@@ -229,22 +339,23 @@ section img {
 
     }
 
-    li {
+    nav ul li {
 
         min-width: 4vw;
-        margin: 0 .75vw;
+        margin: 0 .5em;
         border-bottom: 3px solid transparent;
         height: 100%;
-        font-weight: lighter;
+        font-weight: 300;
         font-size: calc(1vw + 1em);
 
     }
 
-    li:last-of-type {
+    nav ul li:last-of-type {
+        margin-left: auto;
         margin-right: 15vw;
     }
 
-    li:first-of-type {
+    nav ul li:first-of-type {
         margin-right: auto;
         margin-left: 15vw;
     }
@@ -252,15 +363,16 @@ section img {
     main {
 
         top 0;
-        margin: 5vh auto;
-        width: 70%;
+        margin: 2.5vh auto;
+        width: 90vw;
+        height: auto;
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(calc(50% - 2.5vw), 1fr));
-        grid-gap: 2.5vw;
+        grid-template-columns: repeat(auto-fill, minmax(calc((100%/3) - 1vw), 1fr));
+        grid-gap: 1vw;
     }
 
     section {
-        filter: drop-shadow(0px 0px .1rem rgba(0, 0, 0, .5));
+        filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .2));
     }
 
     main p {
@@ -280,44 +392,42 @@ section img {
         display: none
     }
 
-    .span-test {
+    /*Grid Styling*/
+    .span-ontdek {
         grid-column: 1 / span 2;
     }
 
-}
-
-/*dark mode*/
-/*
-@media all and (prefers-color-scheme: dark) {
-    body {
-        background-color: black;
+    .span-home {
+        grid-column: 2 / span 3;
     }
 
-    button {
-        background-color: darkslateblue;
+    .span-body {
+        grid-column: 1 / span 2;
     }
 
-    ul {
-        background-color: darkslateblue;
+    section figure {
+        float: right;
+        max-width: 40%;
+        padding: 2%;
+        background-color: white;
+        margin: 0 0 1em 1em;
+        filter: drop-shadow(5px 5px 0 rgba(0, 0, 0, .2));
     }
 
-    ul li {
-        color: white;
+    section figure img {
+        margin: 0;
+        padding: 0;
     }
 
-    ul li:hover {
-        border-bottom: 3px solid white;
+    figcaption {
+        display: block;
+        color: black;
+        font-family: "Brush Script MT", cursive;
+        text-align: center;
+        padding: .5em 0 0 0;
+        line-height: 95%;
+        transform: rotate(-2deg);
+        font-size: 2em;
     }
 
-    section {
-        background-color: darkslateblue !important;
-        color: white;
-    }
-
-}
-*/
-
-
-li:hover {
-    border-bottom: 3px solid black;
 }

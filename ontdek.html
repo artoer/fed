@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="nl">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css?family=Raleway:100,200,300,400,500&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="nav-active"><a href="ontdek.html">Ontdek</a></li>
+                <li><a href="#">Mijn Reis</a></li>
+                <li><a href="#">Profiel</a></li>
+                <li><a href="#">🔎</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section class="span-ontdek">
+            <h2>Florida</h2>
+        </section>
+        <section>
+            <h2>Feiten</h2>
+            <figure><img src=images/5.png alt="Kaart van Florida">
+                <figcaption>Florida!</figcaption>
+            </figure>
+            <ul>
+                <li>De hoofdstad van Florida is Tallahassee.</li>
+                <li>Er wonen ruim 21 miljoen mensen in Florida. </li>
+                <li>De staat wordt ook wel de "Sunshine State" genoemd.</li>
+                <li>Florida staat bekend om zijn sinaasappels!</li>
+            </ul>
+        </section>
+        <section class="span-body">
+            <h2>Welkom in Florida, the Sunshine State!</h2>
+            <figure><img src="images/1.jpg" alt="Zonsondergang met palmbomen">
+                <figcaption>In Florida zie je veel zon en palmbomen</figcaption>
+            </figure>
+            <p>Florida is de zuidelijkste staat van de VS en staat bekend om de zon, zee en stranden.</p>
+            <h3>Over Florida</h3>
+        </section>
+
+        <section>
+            <h2>Contact</h2>
+            <p>Geinteresseerd in een reis naar Florida? Neem dan contact met ons op met onderstaand formulier!</p>
+            <form>
+                <fieldset>
+                    <legend>Contactgegevens</legend>
+                    <label for="fname">Voornaam</label>
+                    <input name="fname" id="fname" type="text">
+
+                    <label for="lname">Achternaam</label>
+                    <input name="lname" id="lname" type="text">
+
+                    <label for="email">Emailadres</label>
+                    <input name="email" id="email" type="text">
+
+                    <label for="plaats">Plaatsnaam</label>
+                    <input name="plaats" id="plaats" type="text">
+
+                    <label for="provincie">Provincie</label>
+                    <select id="provincie" name="provincie">
+                        <option value="ZH">Zuid-Holland</option>
+                        <option value="NH">Noord-Holland</option>
+                        <option value="ZL">Zeeland</option>
+                        <option value="FL">Flevoland</option>
+                        <option value="NB">Noord-Brabant</option>
+                        <option value="LI">Limburg</option>
+                        <option value="GR">Groningen</option>
+                        <option value="DR">Drenthe</option>
+                        <option value="OV">Overijssel</option>
+                        <option value="GL">Gelderland</option>
+                        <option value="FR">Friesland</option>
+                    </select>
+
+                    <input type="submit" value="Verstuur!">
+                </fieldset>
+            </form>
+        </section>
+    </main>
+
+</body>
+
+</html>
