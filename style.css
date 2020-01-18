@@ -208,7 +208,7 @@ main p:not(:first-of-type) {
 
 /*Stijling voor level 2 en 3 headers*/
 h2 {
-    font-size: calc(1.05em + 1.5vh);
+    font-size: calc(1.05em + 1.1vw);
     font-family: 'Raleway', sans-serif;
     text-align: left;
     margin-bottom: 1em;
@@ -216,7 +216,7 @@ h2 {
 
 h3 {
     margin-top: 1em;
-    font-size: calc(.6em + 1.5vh);
+    font-size: calc(1.05em + .6vw);
     font-family: 'Raleway', sans-serif;
     text-align: left;
 }
