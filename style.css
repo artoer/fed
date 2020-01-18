@@ -63,9 +63,10 @@ body {
 }
 
 /*Grote oranje, call to action knop op de homepage*/
-button {
+.button {
 
     box-sizing: border-box;
+    text-decoration: none;
     position: absolute;
     bottom: 20vh;
     box-shadow: 0 0 1px #000;
@@ -82,7 +83,7 @@ button {
 }
 
 /*Animatie voor de knop*/
-button:hover {
+.button:hover {
     transition: 250ms ease;
     background-color: #fff;
     color: #000;
@@ -201,7 +202,7 @@ li {
 /*Ruimte tussen p's behalve de eerste*/
 main p:not(:first-of-type) {
 
-    padding-top: 1.5em;
+    padding-top: .9em;
 
 }
 
@@ -214,11 +215,10 @@ h2 {
 }
 
 h3 {
-    margin: 1em 0;
+    margin-top: 1em;
     font-size: calc(.6em + 1.5vh);
     font-family: 'Raleway', sans-serif;
     text-align: left;
-    margin-bottom: 1em;
 }
 
 /*Stijling voor de sections*/
