@@ -1,8 +1,8 @@
 # fed
-front end development 2019/20
+**front end development 2019/20
 
 
-bronnen code:
+**bronnen code:
 
 https://css-tricks.com/snippets/css/complete-guide-grid/
 
@@ -30,7 +30,7 @@ https://www.w3schools.com/cssref/css3_pr_transform.asp
 
 https://www.w3schools.com/tags/tag_figcaption.asp
 
-bronnen content:
+**bronnen content:
 
 https://en.wikipedia.org/wiki/Florida
 
@@ -38,7 +38,7 @@ https://www.google.com/maps/@28.4134304,-83.1334436,7.03z
 
 alle andere foto's eigen werk
 
-feedback klasgenoten
+**feedback klasgenoten
 
 +goed uitgewerkt mobile
 
