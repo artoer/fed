@@ -285,14 +285,23 @@ section img {
 
 /*Stijling voor specifiek grid element met achtergrondfoto en extra grote header*/
 .span-ontdek {
+    position: relative;
     background-image: url(images/4.jpg);
     min-height: 33vh;
-    text-shadow: 2px 2px 0 black;
-    font-size: 7vw;
+
 
     background-position: 45%;
     background-repeat: no-repeat;
     background-size: cover;
+}
+
+.span-ontdek h2 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-shadow: 2px 2px 0 black;
+    font-size: calc(2em + 4vw);
 }
 
 
