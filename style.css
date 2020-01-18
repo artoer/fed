@@ -100,8 +100,9 @@ body {
 
 header input,
 button {
-    margin: 0;
+    margin: 0 auto;
     padding: .2em;
+    border-radius: 5px;
 }
 
 /*Grote oranje, call to action knop op de homepage*/
