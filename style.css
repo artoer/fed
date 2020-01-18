@@ -98,8 +98,10 @@ body {
 }
 
 
-header input {
+header input,
+button {
     margin: 0;
+    padding: .2em;
 }
 
 /*Grote oranje, call to action knop op de homepage*/
@@ -341,7 +343,8 @@ input[type=text]:focus {
 
 input,
 select,
-textarea {
+textarea,
+button {
     font-family: inherit;
     font-size: 100%;
 }
@@ -474,7 +477,7 @@ section ul li {
     .search-closed {
         position: absolute;
         box-sizing: border-box;
-        max-height: 7.5vh;
+        width: auto;
         z-index: 1;
         top: 0;
         right: 15vw;
@@ -490,7 +493,7 @@ section ul li {
     .search-open {
         position: absolute;
         box-sizing: border-box;
-        max-height: 7.5vh;
+        width: auto;
         z-index: 2;
         top: 7.5vh;
         right: 15vw;
