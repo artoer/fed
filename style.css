@@ -172,6 +172,7 @@ nav ul {
 }
 
 /*Scrollbar verstop trucje*/
+/*bron: https://stackoverflow.com/questions/3296644/hiding-the-scroll-bar-on-an-html-page*/
 nav ul::-webkit-scrollbar {
 
     display: none;
@@ -265,6 +266,7 @@ h3 {
 }
 
 /*Stijling voor de sections*/
+/*bron: https://developer.mozilla.org/en-US/docs/Web/CSS/linear-gradient*/
 section {
     color: white;
     padding: 3vh;
@@ -310,6 +312,7 @@ nav ul li:hover {
 }
 
 /*Formulier*/
+/*Bron: https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms*/
 fieldset {
 
     box-sizing: border-box;
@@ -472,6 +475,8 @@ section ul li {
         padding: 0;
     }
 
+    /*Bron: https://www.w3schools.com/tags/tag_figcaption.asp*/
+    /*Bron: https://www.w3schools.com/cssref/css3_pr_transform.asp*/
     figcaption {
         display: block;
         color: black;
