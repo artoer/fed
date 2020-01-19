@@ -39,10 +39,17 @@ alle andere foto's eigen werk
 
 ## feedback klasgenoten
 
-+goed uitgewerkt mobile
+### feedback #2
++ goed uitgewerkt mobile
++ scroll-functies origineel ((navigatie?))
++ layout mooi
+- werk aan je desktop website
+- geen echte content
 
-+scroll-functies origineel ((navigatie?))
+### feedback #1
 
-+layout mooi
++ ziet er netjes uit!
++ goed responsive
++ nette transitions
++ je hebt alles
 
--werk aan je desktop website
