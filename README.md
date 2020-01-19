@@ -19,7 +19,7 @@ https://developer.mozilla.org/en-US/docs/Web/CSS/scrollbar-width //scrollbars ve
 
 https://linuxwebdevelopment.com/how-to-insert-emojis-in-html/ //hoe emoji's te gebruiker in html/css
 
-https://stackoverflow.com/a/228094 //witruimte compenseren van position:relative dmv negatieve margins
+https://www.smashingmagazine.com/2009/07/the-definitive-guide-to-using-negative-margins/ //witruimte compenseren van position:relative dmv negatieve margins
 
 https://developer.mozilla.org/en-US/docs/Learn/Forms/Styling_web_forms
 
