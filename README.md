@@ -40,16 +40,16 @@ alle andere foto's eigen werk
 ## feedback klasgenoten
 
 ### feedback #1
-+goed uitgewerkt mobile
-+scroll-functies origineel ((navigatie?))
-+layout mooi
--werk aan je desktop website
--geen echte content
++ goed uitgewerkt mobile
++ scroll-functies origineel ((navigatie?))
++ layout mooi
+- werk aan je desktop website
+- geen echte content
 
 ### feedback #2
 
-+ziet er netjes uit!
-+goed responsive
-+nette transitions
-+je hebt alles
++ ziet er netjes uit!
++ goed responsive
++ nette transitions
++ je hebt alles
 
