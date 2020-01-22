@@ -139,7 +139,8 @@ h1 {
     margin: auto;
     text-align: center;
     font-family: 'Raleway', sans-serif;
-    font-weight: 300;
+    font-weight: bolder;
+    background-blend-mode: screen;
     color: #fff;
     font-size: calc(7vw + 1em);
 
@@ -175,9 +176,8 @@ nav ul {
 /*HER: Custom focus met animatie voor knop*/
 nav ul li a:focus {
     animation: focusnav 2.5s infinite ease-in-out;
-    border-radius: 5px;
-    margin-bottom: -3px;
-    z-index: 5;
+    border: 1px #f54 dashed;
+    box-sizing: border-box;
 }
 
 @keyframes focusnav {
@@ -318,6 +318,10 @@ section {
     filter: drop-shadow(none);
     background: url(images/bg.JPG), linear-gradient(35deg, #f54, rgba(0, 0, 139, .75));
     background-blend-mode: darken;
+}
+
+section:not(:last-of-type) {
+    border-bottom: 3px solid white;
 }
 
 /*Stijling voor eventuele afbeeldingen in de sections*/
