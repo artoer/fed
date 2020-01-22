@@ -41,6 +41,8 @@ https://en.wikipedia.org/wiki/Florida
 
 https://www.google.com/maps/@28.4134304,-83.1334436,7.03z
 
+https://www.vectorstock.com/royalty-free-vector/tropical-flower-vector-4937606
+
 alle andere foto's eigen werk
 
 ## feedback klasgenoten
