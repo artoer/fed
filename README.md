@@ -33,6 +33,8 @@ https://css-tricks.com/basics-css-blend-modes/
 
 https://css-tricks.com/almanac/properties/m/mix-blend-mode/
 
+https://css-tricks.com/almanac/properties/a/animation/
+
 ## bronnen content:
 
 https://en.wikipedia.org/wiki/Florida
