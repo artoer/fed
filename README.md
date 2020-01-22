@@ -29,6 +29,10 @@ https://www.w3schools.com/cssref/css3_pr_transform.asp
 
 https://www.w3schools.com/tags/tag_figcaption.asp
 
+https://css-tricks.com/basics-css-blend-modes/
+
+https://css-tricks.com/almanac/properties/m/mix-blend-mode/
+
 ## bronnen content:
 
 https://en.wikipedia.org/wiki/Florida
