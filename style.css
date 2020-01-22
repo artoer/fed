@@ -316,7 +316,7 @@ section {
     color: white;
     padding: 3vh;
     filter: drop-shadow(none);
-    background: url(images/bg.jpg), linear-gradient(35deg, #f54, rgba(0, 0, 139, .75));
+    background: url(images/bg.JPG), linear-gradient(35deg, #f54, rgba(0, 0, 139, .75));
     background-blend-mode: darken;
 }
 
