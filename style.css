@@ -175,21 +175,22 @@ nav ul {
 /*HER: Custom focus met animatie voor knop*/
 nav ul li a:focus {
     animation: focusnav 2.5s infinite ease-in-out;
-    border: 1px #f54 dashed;
-    box-sizing: border-box;
+    font-weight: bolder;
 }
 
 @keyframes focusnav {
 
     0%,
     100% {
-        background-color: white;
+        /*        background-color: white;*/
         color: #f54;
+        border: 2px #f54 dashed;
     }
 
     50% {
-        background-color: #f54;
-        color: white;
+        /*        background-color: #f54;*/
+        color: black;
+        border: 2px black dashed;
     }
 }
 
@@ -351,31 +352,38 @@ section img {
 .span-ontdek h2 {
     /* HER: Obscure CSS propoerties*/
     mix-blend-mode: screen;
-    color: #f54;
+    /*    color: #f54;*/
+    color: #F00;
     position: absolute;
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
-    text-shadow: 1px 1px 5px black;
     font-size: calc(4em + 6vw);
 
 }
 
-/*HER: Obscure CSS selectoren en elementen positioneren*/
+/*HER: Obscure CSS selectoren (blend modes) en elementen positioneren (:before en :after*/
 .span-ontdek h2::after {
     content: 'Florida';
+    mix-blend-mode: screen;
     position: absolute;
-    top: 49.25%;
-    left: 49.25%;
+    color: #0F0;
+
+    top: 49.5%;
+    left: 49.5%;
     transform: translate(-50%, -50%);
+
 
 }
 
 .span-ontdek h2::before {
     content: 'Florida';
+    mix-blend-mode: screen;
     position: absolute;
-    top: 50.75%;
-    left: 50.75%;
+    color: #00F;
+
+    top: 50.5%;
+    left: 50.5%;
     transform: translate(-50%, -50%);
 
 }

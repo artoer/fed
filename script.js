@@ -10,6 +10,7 @@ var searchbar = document.querySelector('.search-closed');
 //wanneer de eventlistener wordt getriggerd wordt de class van de zoekbalk getoggled
 function toggle() {
     searchbar.classList.toggle('search-open');
+    zoeken.classList.toggle('nav-active');
 }
 
 //er wordt een eventlistener toegevoegd aan de zoekknop
