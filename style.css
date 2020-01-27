@@ -626,15 +626,3 @@ section ul li {
 
 
 }
-
-/*
-@media (prefers-color-scheme: dark) {
-
-    body {
-        background-color: black;
-    }
-
-    section {
-        background: linear-gradient(35deg, #337, #111);
-    }
-}*/
