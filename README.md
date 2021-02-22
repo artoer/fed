@@ -1,5 +1,5 @@
 # front end development 2019/20
-These are two pages of a fictional travel website/app I made for a school assignment.
+**These are two pages of a fictional travel website/app I made for a school assignment.**
 
 ## bronnen code/sources code:
 
