@@ -1,7 +1,7 @@
 # front end development 2019/20
+These are two pages of a fictional travel website/app I made for a school assignment.
 
-
-## bronnen code:
+## bronnen code/sources code:
 
 https://css-tricks.com/snippets/css/complete-guide-grid/
 
@@ -35,7 +35,7 @@ https://css-tricks.com/almanac/properties/m/mix-blend-mode/
 
 https://css-tricks.com/almanac/properties/a/animation/
 
-## bronnen content:
+## bronnen content/sources content:
 
 https://en.wikipedia.org/wiki/Florida
 
@@ -45,7 +45,7 @@ https://www.vectorstock.com/royalty-free-vector/tropical-flower-vector-4937606
 
 alle andere foto's eigen werk
 
-## feedback klasgenoten
+## feedback klasgenoten/feedback classmates (dutch)
 
 ### feedback #1
 + goed uitgewerkt mobile
